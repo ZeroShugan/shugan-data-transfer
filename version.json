@@ -1,1 +1,31 @@
+{
+  "changelog": [
+    {
+      "version": "2.3.0",
+      "release_date": "2026-02-09",
+      "release_notes": "Initial tracked release",
+      "minimum_blender": "4.2.0",
+      "new_features": [],
+      "changes": [],
+      "fixes": []
+    }
+  ],
+  "stores": {
+    "booth": {
+      "name": "Booth",
+      "url": "https://shugan.booth.pm/",
+      "icon": "COLLECTION_COLOR_01"
+    },
+    "gumroad": {
+      "name": "Gumroad",
+      "url": "https://gumroad.com/shugan",
+      "icon": "COLLECTION_COLOR_07"
+    },
+    "blender_market": {
+      "name": "Blender Market",
+      "url": "https://blendermarket.com/creators/shugan",
+      "icon": "COLLECTION_COLOR_02"
+    }
+  }
+}
 
