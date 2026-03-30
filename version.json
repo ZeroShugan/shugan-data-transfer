@@ -1,10 +1,10 @@
 {
   "changelog": [
     {
-      "version": "2.5.0",
-      "release_date": "2026-02-09",
-      "release_notes": "Initial tracked release",
-      "minimum_blender": "4.2.0",
+      "version": "2.4.0",
+      "release_date": "2026-03-30",
+      "release_notes": "Data Transfer ++ Release",
+      "minimum_blender": "4.0.0",
       "new_features": [],
       "changes": [],
       "fixes": []
@@ -28,4 +28,3 @@
     }
   }
 }
-
