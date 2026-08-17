@@ -1,13 +1,44 @@
 {
   "changelog": [
     {
-      "version": "2.4.0",
-      "release_date": "2026-03-30",
-      "release_notes": "Data Transfer ++ Release",
-      "minimum_blender": "4.0.0",
-      "new_features": [],
-      "changes": [],
-      "fixes": []
+      "version": "1.0.0",
+      "release_date": "2026-08-17",
+      "release_notes": "Quality release: better shape key fitting on clothing, cleaner texture bakes, and a simpler panel.",
+      "minimum_blender": "5.0.0",
+      "new_features": [
+        "Simple / Full panel modes with separate settings",
+        "Smoothing masks for shape keys: boundary, centre seam and inward, with auto-apply",
+        "Automatic clipping correction after a shape key transfer",
+        "Rigid Fit +: small islands (buttons, zippers) follow the garment and keep their shape",
+        "Use Target as Source: copy between two regions of the same mesh",
+        "Backups: restore the target mesh from any past transfer",
+        "Report a Bug: send logs anonymously (view before sending)",
+        "Live progress window with learned time estimates",
+        "Preserve X Symmetry for shape key and vertex group transfers"
+      ],
+      "changes": [
+        "Requires Blender 5.0 or newer",
+        "Shape transfer onto a mesh WITH shape keys now re-anchors the Basis, so the change is visible",
+        "Texture: bake margin applies to the projection engine, and defaults to 8 px",
+        "Texture: Max Ray Distance defaults to 0.01 and Cage Extrusion to 0.001, with plainer explanations",
+        "Transfer button turns red when a run will take over 2 minutes, or when Vertex ID meets different vertex counts",
+        "Search Method advanced options removed - the tolerances adapt on their own now",
+        "Panel: option buttons respond instantly (no undo snapshot per click)",
+        "Much better transfer time estimates, including texture bakes",
+        "Vertex order transfer is 5x faster on heavy meshes",
+        "Addon size reduced from 421 MB to 153 MB"
+      ],
+      "fixes": [
+        "Vertex Group + Preserve X Symmetry wiped weights when the source origin was off-centre",
+        "Active UV ignored the mesh positions, so World and Local space gave different results",
+        "Texture bakes left dark dots along UV seams",
+        "Texture: Local space was ignored by the projection engine",
+        "Vertex Index + Raycast did nothing at all",
+        "Full UI option buttons could stop responding after visiting the Simple UI",
+        "Shape key transfers left every key value at 1",
+        "Surface Deform with Pre-Subdivide took minutes instead of seconds",
+        "Vertex ID with different vertex counts now warns instead of failing silently"
+      ]
     }
   ],
   "stores": {
